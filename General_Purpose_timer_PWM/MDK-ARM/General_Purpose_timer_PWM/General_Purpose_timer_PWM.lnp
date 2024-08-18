@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"general_purpose_timer_pwm\startup_stm32f407xx.o"
+"general_purpose_timer_pwm\main.o"
+"general_purpose_timer_pwm\gpio.o"
+"general_purpose_timer_pwm\tim.o"
+"general_purpose_timer_pwm\stm32f4xx_it.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_msp.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_tim.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_tim_ex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_rcc.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_rcc_ex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_flash.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_flash_ex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_flash_ramfunc.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_gpio.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_dma_ex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_dma.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_pwr.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_pwr_ex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_cortex.o"
+"general_purpose_timer_pwm\stm32f4xx_hal.o"
+"general_purpose_timer_pwm\stm32f4xx_hal_exti.o"
+"general_purpose_timer_pwm\system_stm32f4xx.o"
+--strict --scatter "General_Purpose_timer_PWM\General_Purpose_timer_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "General_Purpose_timer_PWM.map" -o General_Purpose_timer_PWM\General_Purpose_timer_PWM.axf
